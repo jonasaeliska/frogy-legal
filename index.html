@@ -34,11 +34,11 @@
   .lang button { border: 0; background: transparent; color: var(--muted); font: inherit; font-size: 14px; font-weight: 800; padding: 6px 12px; border-radius: 999px; cursor: pointer; }
   .lang button[aria-pressed="true"] { background: var(--blue); color: var(--navy); }
 
-  .hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; padding: 56px 0 40px; }
+  .hero { display: grid; grid-template-columns: 1.1fr .9fr; gap: 40px; align-items: center; padding-top: 56px; padding-bottom: 40px; }
   .eyebrow { display: inline-block; background: rgba(143,209,154,.15); color: var(--green); border-radius: 999px; padding: 6px 14px; font-size: 14px; font-weight: 800; margin-bottom: 18px; }
-  h1 { font-size: clamp(38px, 6vw, 64px); line-height: 1.05; font-weight: 900; margin: 0 0 18px; letter-spacing: -0.5px; }
+  h1 { text-wrap: balance; font-size: clamp(34px, 6vw, 64px); line-height: 1.05; font-weight: 900; margin: 0 0 18px; letter-spacing: -0.5px; }
   h1 .hl { color: var(--green); }
-  .lead { font-size: 20px; color: var(--muted); font-weight: 700; margin: 0 0 28px; max-width: 34ch; }
+  .lead { text-wrap: pretty; font-size: 20px; color: var(--muted); font-weight: 700; margin: 0 0 28px; max-width: 34ch; }
   .cta { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; }
   .store { display: inline-flex; align-items: center; gap: 10px; background: #000; color: #fff; border-radius: 14px; padding: 10px 18px; text-decoration: none; border: 1px solid #444; }
   .store svg { width: 26px; height: 26px; }
@@ -85,6 +85,7 @@
 
   @media (max-width: 860px) {
     .hero { grid-template-columns: 1fr; padding-top: 32px; text-align: center; }
+    h1 { max-width: 17ch; margin-left: auto; margin-right: auto; }
     .lead { margin-left: auto; margin-right: auto; }
     .cta { justify-content: center; }
     .frogs { height: 320px; max-width: 420px; margin: 0 auto; width: 100%; }
